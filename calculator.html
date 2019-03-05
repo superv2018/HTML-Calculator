@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <div class="wrapper">
+      <form name="calc">
+        <input type="text" name="display">
+        <br><br>
+        <input type="button" value="9" onclick="calc.display.value+='9'">
+        <input type="button" value="8" onclick="calc.display.value+='8'">
+        <input type="button" value="7" onclick="calc.display.value+='7'">
+        <input class="orange" type="button" value="+" onclick="calc.display.value+='+'">
+        <br><br>
+        <input type="button" value="6" onclick="calc.display.value+='6'">
+        <input type="button" value="5" onclick="calc.display.value+='5'">
+        <input type="button" value="4" onclick="calc.display.value+='4'">
+        <input class="orange" type="button" value="-" onclick="calc.display.value+='-'">
+        <br><br>
+        <input type="button" value="3" onclick="calc.display.value+='3'">
+        <input type="button" value="2" onclick="calc.display.value+='2'">
+        <input type="button" value="1" onclick="calc.display.value+='1'">
+        <input class="orange" type="button" value="*" onclick="calc.display.value+='*'">
+        <br><br>
+        <input type="button" value="0" onclick="calc.display.value+='0'">
+        <input type="button" value="%" onclick="calc.display.value+='%'">
+        <input type="button" value="/" onclick="calc.display.value+='/'">
+        <input class="orange" type="button" value="=" onclick="calc.display.value =eval(calc.display.value)">
+        <br><br>
+        <input id="del" type="reset" value="CLEAR" onclick="calc.display.value ''">
+      </form>
+    </div>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
